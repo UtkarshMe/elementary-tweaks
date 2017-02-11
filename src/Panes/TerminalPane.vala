@@ -64,7 +64,7 @@ namespace ElementaryTweaks {
             natural_copy_paste.set_state (TerminalSettings.get_default ().natural_copy_paste);
             follow_last_tab.set_state (TerminalSettings.get_default ().follow_last_tab);
             unsafe_paste_alert.set_state (TerminalSettings.get_default ().unsafe_paste_alert);
-            term_font.font_name = TerminalSettings.get_default ().font;
+            term_font.font_name = InterfaceSettings.get_default ().monospace_font_name;
         }
 
         private void connect_signals () {
